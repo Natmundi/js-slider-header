@@ -3,11 +3,23 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+<div class="page">
+    <main class="slider">
+        <div class="slider__content">
+            <img src="https://picsum.photos/600/400" class="slider__item" width="100%" height="400">
+            <img src="https://picsum.photos/600/400" class="slider__item" width="100%" height="400">
+            <img src="https://picsum.photos/600/400" class="slider__item" width="100%" height="400">
+            <img src="https://picsum.photos/600/400" class="slider__item" width="100%" height="400">
+        </div>
+
+        <button class="slider__button slider__button--left"></button>
+        <button class="slider__button slider__button--right"></button>
+    </main>
+</div>
 
 {{!
-    Цей код містить лише те, що буде виводитись в <body>
+Цей код містить лише те, що буде виводитись в
+
+<body>
     Адже наш layout/default.hbs має вже структуру HTML
-}}
+    }}
